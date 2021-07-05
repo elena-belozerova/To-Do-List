@@ -15,8 +15,13 @@ body {
   padding: 20px;
   background-color: #dce2e2;
 }
+form{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .input {
-  width: 800px;
+  width: 100%;
   height: 20px;
   border: none;
   border-bottom: 1px solid black;
@@ -60,4 +65,20 @@ li.checked {
 }
 .close:hover {
   background-color: red;
+}
+@media (max-width: 400px){
+  .header{
+    height: 40px;
+  }
+  .header > h1{
+    margin: 0;
+  }
+  form{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .btn{
+    width: 120px;
+    margin: 20px 0 0 0;
+  }
 }
